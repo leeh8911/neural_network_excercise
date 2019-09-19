@@ -21,9 +21,9 @@ classdef Layer
                 if i == 1
                     obj.neurons = Neuron;
                 else
-                    obj.neurons(i) = Neuron;
+                    obj.neurons(i,1) = Neuron;
                 end
-                obj.neurons(i) = obj.neurons(i).init_(input_vector_size);
+                obj.neurons(i,1) = obj.neurons(i,1).init_(input_vector_size);
             end
         end
         
